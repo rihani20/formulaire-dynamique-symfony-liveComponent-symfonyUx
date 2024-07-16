@@ -1,0 +1,19 @@
+<div{{attributes}}>
+
+	{{ form_start(form)}}
+    
+	{{form_row(form.teaOrCoffee)}}
+
+	{% if form.teaType is defined %}
+		{{form_row(form.teaType)}}
+	{% endif %}
+
+	{% if form.coffeeType is defined %}
+		{{form_row(form.coffeeType)}}
+	{% endif %}
+
+	{{form_row(form.sugar)}}
+
+	{{ form_end(form)}}
+
+</div>
